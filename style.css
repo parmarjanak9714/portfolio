@@ -1,0 +1,99 @@
+:root {
+  --bg: #ffffff; --text: #1a1a2e; --card: #f3f4f8;
+  --accent: #4f46e5; --border: #dcdfe8;
+}
+[data-theme="dark"] {
+  --bg: #0f1117; --text: #e8e9f0; --card: #1a1d27;
+  --accent: #818cf8; --border: #2b2f3d;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; transition: background .3s, color .3s; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+.container { width: 90%; max-width: 1000px; margin: auto; padding: 4rem 0 2rem; }
+.title { margin-bottom: 1.5rem; color: var(--accent); }
+
+/* Header (mobile first) */
+.header { position: fixed; top: 0; width: 100%; background: var(--bg); border-bottom: 1px solid var(--border); z-index: 10; }
+.nav { display: flex; justify-content: space-between; align-items: center; padding: .8rem 0; position: relative; }
+.logo { font-weight: 700; font-size: 1.2rem; color: var(--accent); }
+.nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); padding: 1rem; gap: 1rem; border-bottom: 1px solid var(--border); }
+.nav-links.open { display: flex; }
+.nav-actions button { background: none; border: 1px solid var(--border); color: var(--text); font-size: 1.1rem; padding: .3rem .6rem; border-radius: 8px; cursor: pointer; margin-left: .4rem; }
+
+/* Hero */
+.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; gap: .6rem; }
+.hero h1 { font-size: 2.4rem; }
+.eyebrow { color: var(--accent); }
+.btns { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1rem; }
+.btn { background: var(--accent); color: #fff; padding: .6rem 1.2rem; border-radius: 8px; font-weight: 600; }
+.btn-outline { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
+
+/* Grids */
+.grid { display: grid; gap: 1rem; }
+.skills { grid-template-columns: repeat(2, 1fr); }
+.projects { grid-template-columns: 1fr; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.2rem; text-align: center; }
+.project { text-align: left; cursor: pointer; transition: transform .2s; }
+.project:hover { transform: translateY(-4px); }
+.link { color: var(--accent); font-weight: 600; }
+
+/* Modal */
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,.6); display: none; place-items: center; z-index: 20; padding: 1rem; }
+.modal.show { display: grid; }
+.modal-box { background: var(--bg); padding: 1.5rem; border-radius: 12px; max-width: 480px; width: 100%; position: relative; }
+.modal-box p { margin: .6rem 0; }
+.close { position: absolute; top: .6rem; right: .8rem; background: none; border: none; color: var(--text); font-size: 1.2rem; cursor: pointer; }
+.footer { text-align: center; padding: 2rem 1rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+
+/* Tablet */
+@media (min-width: 600px) {
+  .skills { grid-template-columns: repeat(4, 1fr); }
+  .projects { grid-template-columns: repeat(2, 1fr); }
+}
+/* Desktop */
+@media (min-width: 900px) {
+  #menuBtn { display: none; }
+  .nav-links { display: flex; flex-direction: row; position: static; padding: 0; border: none; }
+  .projects { grid-template-columns: repeat(3, 1fr); }
+  .hero h1 { font-size: 3.6rem; }
+}
+
+/* Marquee slider */
+.marquee {
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--card);
+  padding: 1rem 0;
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 25s linear infinite;
+}
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-group { display: flex; gap: 1.5rem; padding-right: 1.5rem; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  white-space: nowrap;
+  padding: .5rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  font-weight: 600;
+}
+.chip i { color: var(--accent); font-size: 1.2rem; }
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Jene animation pasand na hoy tena mate */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}

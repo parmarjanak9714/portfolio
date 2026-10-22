@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Developer portfolio of janak parmar" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>janak parmar | Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <a href="#home" class="logo">janak parmar</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+          <button id="menuBtn" aria-label="Menu">☰</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero container">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>janak parmar</h1>
+        <h2>Full Stack Developer(MERN)</h2>
+        <p>I build clean, fast and responsive web apps.</p>
+        <div class="btns">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="resume.pdf" class="btn btn-outline" download
+            >Download Resume</a
+          >
+        </div>
+      </section>
+
+      <div class="marquee" aria-label="My roles">
+        <div class="marquee-track">
+          <!-- Group 1 -->
+          <div class="marquee-group">
+            <span class="chip"
+              ><i class="fa-brands fa-react"></i> React Developer</span
+            >
+            <span class="chip"
+              ><i class="fa-brands fa-node-js"></i> Node.js Backend
+              Developer</span
+            >
+            <span class="chip"
+              ><i class="fa-solid fa-layer-group"></i> Full Stack
+              Developer</span
+            >
+            <span class="chip"
+              ><i class="fa-solid fa-database"></i> MongoDB Expert</span
+            >
+          </div>
+          <!-- Group 2  -->
+          <div class="marquee-group" aria-hidden="true">
+            <span class="chip"
+              ><i class="fa-brands fa-react"></i> React Developer</span
+            >
+            <span class="chip"
+              ><i class="fa-brands fa-node-js"></i> Node.js Backend
+              Developer</span
+            >
+            <span class="chip"
+              ><i class="fa-solid fa-layer-group"></i> Full Stack
+              Developer</span
+            >
+            <span class="chip"
+              ><i class="fa-solid fa-database"></i> MongoDB Expert</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <section id="about" class="container">
+        <h2 class="title">About Me</h2>
+        <p>
+          Hi, I'm Janak Parmar, an aspiring MERN Stack and Frontend Developer. I
+          have learned technologies like HTML, CSS, JavaScript, React.js,
+          Node.js, Express.js, and MongoDB. I enjoy building modern websites and
+          user-friendly web applications. I am always eager to learn new
+          technologies, improve my coding skills, and grow as a Software
+          Developer.
+        </p>
+        <h3>Maharaja Krishnakumarsinhji Bhavnagar University</h3>
+
+        <p><strong>Education:</strong> Bachelor of Arts (B.A.)</p>
+
+        <p><strong>Duration:</strong> 2020 - 2023</p>
+
+        <p><strong>Status:</strong> Completed (3 Years)</p>
+      </section>
+
+      <section id="skills" class="container">
+        <h2 class="title">Skills</h2>
+        <div class="grid skills">
+          <div class="card">HTML5</div>
+          <div class="card">CSS3</div>
+          <div class="card">JavaScript</div>
+          <div class="card">React</div>
+          <div class="card">Node.js</div>
+          <div class="card">Express.js</div>
+          <div class="card">Git & GitHub</div>
+          <div class="card">MySQL</div>
+        </div>
+      </section>
+
+      <section id="projects" class="container">
+        <h2 class="title">Featured Projects</h2>
+        <div class="grid projects">
+          <article class="card project" data-id="0" tabindex="0">
+            <h3>Hang-Out Food Zone</h3>
+            <p>
+              Responsive food ordering web app with cart, search and order
+              history.
+            </p>
+            <span class="link">View details →</span>
+          </article>
+          <article class="card project" data-id="1" tabindex="0">
+            <h3>Netflix Clone (MERN)</h3>
+            <p>
+              Full-stack streaming app with TMDB movies, trailers and watchlist.
+            </p>
+            <span class="link">View details →</span>
+          </article>
+          <article class="card project" data-id="2" tabindex="0">
+            <h3>Real-Time Chat App (MERN)</h3>
+            <p>
+              WhatsApp-style chat app with Socket.io, OTP login and dark/light
+              mode.
+            </p>
+            <span class="link">View details →</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="container">
+        <h2 class="title">Contact</h2>
+        <p>Let's work together! Reach me here:</p>
+        <div class="btns">
+          <a class="btn" href="mailto:parmarjanak9714@gmail.com">Email</a>
+          <a
+            class="btn btn-outline"
+            href="https://github.com/parmarjanak9714"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <a
+            class="btn btn-outline"
+            href="https://www.linkedin.com/in/janak-parmar08111997"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© 2026 janak parmar. All rights reserved.</footer>
+
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-box" role="dialog" aria-modal="true">
+        <button class="close" id="closeModal" aria-label="Close">✕</button>
+        <h3 id="mTitle"></h3>
+        <p id="mDesc"></p>
+        <p><strong>Tech:</strong> <span id="mTech"></span></p>
+        <div class="btns">
+          <a id="mCode" class="btn" target="_blank" rel="noopener">GitHub</a>
+          <a id="mLive" class="btn btn-outline" target="_blank" rel="noopener"
+            >Live Demo</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
