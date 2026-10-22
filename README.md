@@ -49,7 +49,7 @@ portfolio/
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/USERNAME/portfolio.git
+   git clone https://github.com/parmarjanak9714/portfolio
    ```
 2. Open `index.html` in your browser (or use the VS Code Live Server extension)
 
