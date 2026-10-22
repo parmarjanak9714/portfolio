@@ -1,4 +1,4 @@
-// Theme toggle (saved in localStorage)
+// Theme toggle 
 const root = document.documentElement;
 const themeBtn = document.getElementById("themeToggle");
 const saved = localStorage.getItem("theme") || "dark";
@@ -18,7 +18,7 @@ const navLinks = document.getElementById("navLinks");
 document.getElementById("menuBtn").addEventListener("click", () => navLinks.classList.toggle("open"));
 navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => navLinks.classList.remove("open")));
 
-// Project data (potana projects ahiya lakho)
+// Project data 
 const projects = [
     {
     title: "Hang-Out Food Zone",

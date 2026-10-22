@@ -1,8 +1,8 @@
-# TAMARU NAAM - Developer Portfolio
+# janak parmar - Developer Portfolio
 
 A responsive personal portfolio showcasing my MERN stack projects, skills and contact links.
 
-🔗 **Live Demo:** https://USERNAME.github.io/portfolio
+🔗 **Live Demo:** https://portfolio-janak.vercel.app/
 
 ## ✨ Features
 
@@ -24,7 +24,7 @@ A responsive personal portfolio showcasing my MERN stack projects, skills and co
 
 | Netflix Clone (MERN) | React, Node.js, Express, MongoDB, TMDB API, Tailwind | [Demo](https://netflix-mern-clone-two.vercel.app/) |
  [GitHub](https://github.com/parmarjanak9714/netflix-mern-clone) |
- 
+
 | Real-Time Chat App (MERN) | React, Node.js, Express, MongoDB, Socket.io, JWT | [Demo](https://chat-janakparmar.vercel.app/) | [GitHub](https://github.com/parmarjanak9714/Chat-App) |
 
 > Note: Some backends are hosted on a free tier, so the first load may take 30-50 seconds.
