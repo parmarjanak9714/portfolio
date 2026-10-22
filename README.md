@@ -55,7 +55,7 @@ portfolio/
 
 ## 📸 Screenshot
 
-![Portfolio Home](screenshot.png)
+![Portfolio Home](portfolio _screenshot.png)
 
 ## 📬 Contact
 
